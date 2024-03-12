@@ -1,17 +1,18 @@
--   repo: git://github.com/python-telegram-bot/mirrors-yapf
-    sha: v0.12.2
+repos:
+-   repo: https://github.com/python-telegram-bot/mirrors-yapf
+    rev: v0.12.2
     hooks:
     -   id: yapf
         files: ^(ptbtest|tests)/.*\.py$
--   repo: git://github.com/pre-commit/pre-commit-hooks
-    sha: 414cfa7b2322cf1c46cd33a49e9da833ad785473
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 414cfa7b2322cf1c46cd33a49e9da833ad785473
     hooks:
     -   id: flake8
         files: ^ptbtest/.*\.py$
         args:
         - --max-line-length=120
--   repo: git://github.com/pre-commit/mirrors-pylint
-    sha: v1.6.4.post1
+-   repo: https://github.com/pre-commit/mirrors-pylint
+    rev: v3.0.0a5
     hooks:
     -   id: pylint
         files: ^ptbtest/.*\.py$
